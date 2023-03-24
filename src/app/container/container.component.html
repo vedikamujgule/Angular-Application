@@ -1,0 +1,11 @@
+<p>container works!</p>
+<div *ngIf="nutriments">
+    <h2>Nutriments:</h2>
+    <p>Energy: {{ nutriments['energy-kcal'] }} kcal</p>
+    <p>Fat: {{ nutriments.fat }} g</p>
+    <p>Saturated Fat: {{ nutriments['saturated-fat'] }} g</p>
+    <p>Carbohydrates: {{ nutriments.carbohydrates }} g</p>
+    <p>Sugars: {{ nutriments.sugars }} g</p>
+    <p>Fiber: {{ nutriments.fiber }} g</p>
+    <p>Proteins: {{ nutriments.proteins }} g</p>
+  </div>
