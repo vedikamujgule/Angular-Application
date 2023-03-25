@@ -1,2 +1,23 @@
 <app-navigation></app-navigation>
-<app-container></app-container>
+
+<div class="container">
+    <app-container></app-container>
+</div>
+
+<div class="card-body">
+    pass data: <input type="text" (input)="onSearch()" [(ngModel)]="name" class="form-control"/>
+     <input type="button" (click)="transferData()"/>
+     <div>{{name}}</div>
+    <br>
+    <div *ngFor="let name of data">
+        {{name}}    
+    </div>
+
+
+</div>
+
+<app-demo></app-demo>
+<div>
+    This is the cutomer list
+</div>
+<app-customer-list></app-customer-list>
