@@ -8,6 +8,7 @@ import { ContainerComponent } from './container/container.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { DemoComponent } from './demo/demo.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { setBg } from './customer Directives/setBg.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     ContainerComponent,
     NavigationComponent,
     DemoComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    setBg
   ],
   imports: [
     BrowserModule,

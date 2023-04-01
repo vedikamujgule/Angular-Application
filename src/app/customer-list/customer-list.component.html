@@ -1,0 +1,11 @@
+<table>
+    <tr *ngFor ="let customer of customers; let i = index">
+        <td>{{customer.customerNo}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.address}}</td>
+        <td>{{customer.country}}</td>
+        <td>{{customer.city}}</td>
+        <button (click)="selectedCustomer = customer;">Select</button>
+    </tr>
+</table>
+<!-- <p *ngIf="customers.length !==0">{{selectedCustomer.name}}</p> -->

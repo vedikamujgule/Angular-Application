@@ -1,5 +1,5 @@
-<app-navigation></app-navigation>
-
+<!-- <app-navigation></app-navigation> -->
+<!-- 
 <div class="container">
     <app-container></app-container>
 </div>
@@ -12,12 +12,38 @@
     <div *ngFor="let name of data">
         {{name}}    
     </div>
-
-
-</div>
-
-<app-demo></app-demo>
+</div> -->
+<!-- 
 <div>
+    <input type="text" #input/>
+    <button (click)="onSubmit(input)">Submit</button>
+</div>
+<app-demo [value]="inputText" *ngIf="destroy">
+    <h1>
+    This is the projected content {{input.value}}
+    </h1>
+</app-demo>
+
+<br>
+<br>
+<br>
+<button (click)="destroyComponent()">
+    destroy
+</button> -->
+
+<!-- <button (click)="demoComp.consoleHello()">Call consoleHello</button> -->
+<!-- <div>
     This is the cutomer list
 </div>
-<app-customer-list></app-customer-list>
+<app-customer-list></app-customer-list> -->
+
+<h2>
+    this is app component
+</h2>
+
+<app-demo>
+    <h1 setBackground>
+    This is the projected content
+    </h1>
+    <p #paragraph>this is a paragraph</p>
+</app-demo>
