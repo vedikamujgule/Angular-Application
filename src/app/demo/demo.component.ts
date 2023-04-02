@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef, Input, OnChanges, OnInit, SimpleChange, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, ContentChild, ElementRef, Input, OnChanges, OnInit, Output, SimpleChange, SimpleChanges, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-demo',
@@ -10,6 +10,8 @@ export class DemoComponent implements OnInit, OnChanges {
   @ViewChild('dobInput') dateOfBirth: ElementRef | any;
   @ViewChild('ageInput') age: ElementRef | any;
   @ContentChild('paragraph') para : ElementRef | any;
+
+  @Output('sendData') output: ElementRef |any;
 
   dobInput = new Date;
   ageInput ='45';

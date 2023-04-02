@@ -38,8 +38,10 @@
 <app-customer-list></app-customer-list> -->
 
 <h2>
-    this is app component
-</h2>
+<button>
+    Click
+</button>
+<input type="text" [(ngModel)]="search" (ngModelChange)="inputChange($event)">
 
 <app-demo>
     <h1 setBackground>
