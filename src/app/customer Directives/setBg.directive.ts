@@ -5,6 +5,7 @@ import { Directive, ElementRef } from "@angular/core";
 })
 export class setBg{
     constructor(elemet:ElementRef){
-        elemet.nativeElement.style.backgroundColor ='red'
+        elemet.nativeElement.style.backgroundColor ='blue'
+        elemet.nativeElement.style.color ='blue'
     }
 }

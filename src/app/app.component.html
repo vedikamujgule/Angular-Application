@@ -37,15 +37,17 @@
 </div>
 <app-customer-list></app-customer-list> -->
 
-<h2>
+<h2 appRedndererDirective>This is the main component</h2>
+<p appRedndererDirective>
+    Test
+</p>
 <button>
     Click
 </button>
 <input type="text" [(ngModel)]="search" (ngModelChange)="inputChange($event)">
 
 <app-demo>
-    <h1 setBackground>
-    This is the projected content
-    </h1>
-    <p #paragraph>this is a paragraph</p>
+    <p #paragraph appSetColor>Vedika</p>
+    <p #paragraph appMouseHover>Test EVeddika</p>
 </app-demo>
+

@@ -9,6 +9,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { DemoComponent } from './demo/demo.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { setBg } from './customer Directives/setBg.directive';
+import { SetColorDirective } from './set-color.directive';
+import { RedndererDirectiveDirective } from './rednderer-directive.directive';
+import { MouseHoverDirective } from './mouse-hover.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { setBg } from './customer Directives/setBg.directive';
     NavigationComponent,
     DemoComponent,
     CustomerListComponent,
-    setBg
+    setBg,
+    SetColorDirective,
+    RedndererDirectiveDirective,
+    MouseHoverDirective
   ],
   imports: [
     BrowserModule,

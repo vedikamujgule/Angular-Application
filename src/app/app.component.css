@@ -2,3 +2,11 @@ p {
     font-family: 'Times New Roman', Times, serif;
     color: aqua;
 }
+.newRendererClass{
+    font-size: medium;
+    padding: 1em;
+    font-weight: 500;
+    background-color:pink ;
+    color: black;
+
+}
