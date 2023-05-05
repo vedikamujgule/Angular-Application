@@ -11,8 +11,14 @@
 <input type="text" #ageInput/>
 </div> -->
 
-
 <div appSetColor>
     <p appSetColor>in demo</p>
     <ng-content></ng-content>
+    <nav>
+        <ul>
+          <li><a routerLink="child-a">Child A</a></li>
+          <li><a routerLink="child-b">Child B</a></li>
+        </ul>
+      </nav>
+      <router-outlet></router-outlet>
 </div>

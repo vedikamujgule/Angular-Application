@@ -37,17 +37,30 @@
 </div>
 <app-customer-list></app-customer-list> -->
 
-<h2 appRedndererDirective>This is the main component</h2>
+<!-- <h2 appRedndererDirective>This is the main component</h2>
 <p appRedndererDirective>
     Test
 </p>
 <button>
     Click
 </button>
-<input type="text" [(ngModel)]="search" (ngModelChange)="inputChange($event)">
+<input type="text" [(ngModel)]="search" (ngModelChange)="inputChange($event)"> -->
 
-<app-demo>
+<!-- <app-demo>
     <p #paragraph appSetColor>Vedika</p>
-    <p #paragraph appMouseHover>Test EVeddika</p>
+    <p #paragraph appMouseHover>Test Host Listener</p>
+    <p #paragraph appBetterHighlight [ngStyle]="">Test2 -Host Binding</p>
 </app-demo>
+ -->
+  <!-- The routed views render in the <router-outlet>-->
+    <router-outlet></router-outlet>
+ <nav>
+    <ul>
+      <li><a routerLink="../demo" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a>
+    
+        </li>
+      <li><a routerLink="app-customer-list" routerLinkActive="active" ariaCurrentWhenActive="page">Second Component</a></li>
+      <!-- <li><a routerLink="/app-customer-lst" routerLinkActive="active" ariaCurrentWhenActive="page">Second Component</a></li> -->
+    </ul>
+  </nav>
 

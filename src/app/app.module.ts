@@ -12,6 +12,10 @@ import { setBg } from './customer Directives/setBg.directive';
 import { SetColorDirective } from './set-color.directive';
 import { RedndererDirectiveDirective } from './rednderer-directive.directive';
 import { MouseHoverDirective } from './mouse-hover.directive';
+import { BetterHighlightDirective } from './better-highlight.directive';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { ChildAComponent } from './child-a/child-a.component';
+import { ChildBComponent } from './child-b/child-b.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { MouseHoverDirective } from './mouse-hover.directive';
     setBg,
     SetColorDirective,
     RedndererDirectiveDirective,
-    MouseHoverDirective
+    MouseHoverDirective,
+    BetterHighlightDirective,
+    ErrorPageComponent,
+    ChildAComponent,
+    ChildBComponent
   ],
   imports: [
     BrowserModule,
